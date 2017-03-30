@@ -1,6 +1,6 @@
 {
-    "name": "deisss/automodel",
-    "description": "Database to Models generator for Laravel 5+",
+    "name": "deisss/autoacl",
+    "description": "ACL for Laravel 5+",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Deisss\\Automodel\\": "src/"
+            "Deisss\\Autoacl\\": "src/"
         }
     },
     "require": {
