@@ -43,7 +43,7 @@ trait UserAcl
      *
      * @throws \Exception If the Models does not implements everything needed to run this function.
      */
-    public function updateCredentials()
+    public function updateCacheCredentials()
     {
         // Before crashing everything... Check if the class support everything we need...
         if (!property_exists($this, 'attributes')) {
@@ -274,7 +274,7 @@ trait UserAcl
                 ));
 
                 // Updating and saving the model.
-                $this->updateCredentials();
+                $this->updateCacheCredentials();
 
                 if ($autoSave) {
                     $this->save();
@@ -326,7 +326,7 @@ trait UserAcl
                 $this->roles()->detach($role->id);
 
                 // Updating and saving the model.
-                $this->updateCredentials();
+                $this->updateCacheCredentials();
 
                 if ($autoSave) {
                     $this->save();

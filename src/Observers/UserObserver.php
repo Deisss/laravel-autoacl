@@ -19,6 +19,6 @@ class UserObserver
      */
     public function saving(Model $user)
     {
-        $user->updateCredentials();
+        $user->updateCacheCredentials();
     }
 }
