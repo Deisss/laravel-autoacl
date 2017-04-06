@@ -32,7 +32,7 @@ class AutoaclServiceProvider extends ServiceProvider
         // Publishing configuration file
         $this->publishes(
             array(
-                $root.'config'.$DS.'autoacl.php' => config_path('autoacl.php')
+                $root.'Config'.$DS.'autoacl.php' => config_path('autoacl.php')
             ),
             'config'
         );
